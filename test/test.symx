@@ -1,0 +1,47 @@
+[description]
+refdes=U?
+device=MH334A
+description=MH334A
+comment=Created with autosym
+documentation=http://www.github.com/autosym-library
+symversion=0.8
+author=Markus Hutzler
+dist-license=GPL3
+use-license=GPL3
+category=Interface
+
+[option]
+pin_length=300
+pin_grid=200
+symbol_width=1800
+
+[variants]
+# variants are used to create symbols for different packages.
+# The filename will be: devicename + variant
+# Format:
+#     variant: description: [footprint]
+L: SOP10 Package
+Q: SOP14 Package: sop14.fp
+
+[mapping left]
+# Set pins, name and type for each pin on the left side.
+# Each variant needs a pin number seperated with ','
+# if a variant has no such pin, use the '-' sign
+1,1:    VCC:    pwr
+
+7,8:    A:      an
+
+2,3:    MISO:   out
+3,4:    MOSI:   in
+4,5:    SCK:    in
+5,6:    !CS:    in
+
+10,14:  GND:    pwr
+[end]
+
+[mapping right]
+6,9:    X0:     out
+8,10:   X1:     out
+9,11:   X2:     out
+-,12:   X3:     out
+[end]
