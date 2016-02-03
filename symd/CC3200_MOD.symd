@@ -1,0 +1,89 @@
+[description]
+refdes=U?
+device=CC3200MOD
+description= CC3200MOD
+comment=Created with autosym
+documentation=NDA
+symversion=0.8
+author=Markus Hutzler, spiderware gmbh
+dist-license=Free
+use-license=Free
+category=Interface
+
+
+[option]
+# set options here.
+pin_length=300
+pin_grid=200
+symbol_width=2000
+
+[variants]
+# variants are used to create symbols for different packages. The filename will be: devicename + variant
+M:   MOD Package
+
+[mapping left]
+# set pins, Name and type for each pin on the left side, There has to be as many pis as variants!
+# if a variant has no such pin, use the '-' sign
+36:   VBAT_DCDC_ANA:   pwr
+37:   VBAT_DCDC_PA:   pwr
+40:   VBAT_DCDC_DIG_IO:   pwr
+
+35:   nRESET:   io
+
+39:   VDD_ANA2:   pwr
+
+12:   JTAG_TDI:   io
+18:   JTAG_TDO:   io
+21:   JTAG_TCK:   io
+22:   JTAG_TMS:   io
+
+1:   GND:   pwr
+2:   GND:   pwr
+16:   GND:   pwr
+27:   GND:   pwr
+28:   GND:   pwr
+30:   GND:   pwr
+32:   GND:   pwr
+38:   GND:   pwr
+43:   GND:   pwr
+55:   GND:   pwr
+56:   GND:   pwr
+57:   GND:   pwr
+58:   GND:   pwr
+59:   GND:   pwr
+60:   GND:   pwr
+61:   GND:   pwr
+62:   GND:   pwr
+63:   GND:   pwr
+[mapping right]
+31:   RF_BG:   rf
+
+
+
+44:   GPIO_00:   io
+46:   GPIO_01:   io
+47:   GPIO_02:   io
+48:   GPIO_03:   io
+49:   GPIO_04:   io
+50:   GPIO_05:   io
+51:   GPIO_06:   io
+52:   GPIO_07:   io
+53:   GPIO_08:   io
+54:   GPIO_09:   io
+3:   GPIO_10:   io
+4:   GPIO_11:   io
+9:   GPIO_12:   io
+10:   GPIO_13:   io
+5:   GPIO_14:   io
+6:   GPIO_15:   io
+7:   GPIO_16:   io
+8:   GPIO_17:   io
+11:   GPIO_22:   io
+19:   GPIO_28:   io
+42:   GPIO_30:   io
+
+
+
+23:   SOP2:   in
+24:   SOP1:   in
+34:   SOP0:   in

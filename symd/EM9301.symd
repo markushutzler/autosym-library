@@ -1,0 +1,61 @@
+[description]
+refdes=U?
+device=EM9301
+description= EM9301
+comment=Created with autosym
+documentation=NDA
+symversion=0.8
+author=Markus Hutzler, spiderware gmbh
+dist-license=Free
+use-license=Free
+category=Radio
+
+
+[option]
+# set options here.
+pin_length=300
+pin_grid=200
+symbol_width=2000
+
+[variants]
+# variants are used to create symbols for different packages. The filename will be: devicename + variant
+QFN:   QFN Package
+
+[mapping left]
+# set pins, Name and type for each pin on the left side, There has to be as many pis as variants!
+# if a variant has no such pin, use the '-' sign
+18:   VCC2:   pwr
+23:   RST:   in
+
+
+1:   MISO:   out
+2:   MOSI:   in
+3:   SCK:   in
+10:   CS:   in
+
+24:   IRQ:   in
+11:   SEL:   in
+
+
+
+6:   VSS:   pwr
+5:   VSS:   pwr 
+0:   GND:   pwr
+[mapping right]
+21:   XTAL2:   an
+22:   XTAL1:   an
+
+
+15:   ANTN:   rf
+16:   ANTP:   rf
+
+4:   VDD:   pwr
+13:   AVDD_PA:   pwr
+7:   SW_DCDC:   pwr
+8:   VCC1:   pwr
+9:   VBAT:   pwr
+14:   AVSS_PA:   pwr
+17:   AVSS_RF:   pwr
+20:   AVSS_1:   pwr
+12:   AVSS_2:   pwr
+19:   AVSS_3:   pwr

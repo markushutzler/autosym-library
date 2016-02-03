@@ -1,0 +1,41 @@
+[description]
+refdes=U?
+device=EM9301MOD
+description= EM9301MOD
+comment=Created with autosym
+documentation=NDA
+symversion=0.8
+author=Markus Hutzler, spiderware gmbh
+dist-license=Free
+use-license=Free
+category=Radio
+
+
+[option]
+# set options here.
+pin_length=300
+pin_grid=200
+symbol_width=1500
+
+[variants]
+# variants are used to create symbols for different packages. The filename will be: devicename + variant
+M:   MOD Package
+
+[mapping left]
+# set pins, Name and type for each pin on the left side, There has to be as many pis as variants!
+# if a variant has no such pin, use the '-' sign
+8:   VDD:   io
+
+1:   ON:   in
+
+
+
+2:   GND:   io 
+[mapping right]
+9:   SEL:   in
+7:   SCLK:   in
+6:   MOSI:   in
+5:   MISO:   out
+
+4:   IRQ:   out
+3:   !CS:   in

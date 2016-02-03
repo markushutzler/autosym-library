@@ -1,0 +1,34 @@
+[description]
+refdes=U?
+device=TPS61222
+description=TPS61222
+comment=Created with autosym
+documentation=http://www.ti.com/lit/ds/symlink/tps61222.pdf
+symversion=0.8
+author=Markus Hutzler, spiderware gmbh
+dist-license=Free
+use-license=Free
+category=Power
+
+[option]
+# set options here.
+pin_length=300
+pin_grid=200
+symbol_width=1200
+
+[variants]
+# variants are used to create symbols for different packages. The filename will be: devicename + variant
+DCK:   DCK Package
+#RHB:   RHB Package
+
+[mapping left]
+# set pins, Name and type for each pin on the left side, There has to be as many pis as variants!
+# if a variant has no such pin, use the '-' sign
+# an ! in front of the name will create a negative pin
+1:   VIN:   pwr
+6:   EN:   in
+3:   GND:   pwr
+[mapping right]
+5:   L:   in
+4:   VOUT:   out
+2:   FB:   in

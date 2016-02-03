@@ -1,0 +1,123 @@
+[description]
+refdes=U?
+device=MSP430F5529
+description= MSP430F5529
+comment=Created with autosym
+documentation=http://
+symversion=0.8
+author=Markus Hutzler, spiderware gmbh
+dist-license=Free
+use-license=Free
+category=MCU
+
+[option]
+# set options here.
+pin_length=300
+pin_grid=200
+symbol_width=2300
+
+[variants]
+# variants are used to create symbols for different packages. The filename will be: devicename + variant
+PN:   PN Package
+
+[mapping left]
+# set pins, Name and type for each pin on the left side, There has to be as many pis as variants!
+# if a variant has no such pin, use the '-' sign
+# an ! in front of the name will create a negative pin
+18:   DVCC1:   pwr
+50:   DVCC2:   pwr
+11:   AVCC1:   pwr
+20:   VCORE:   pwr
+
+
+71:   TEST:   i
+76:   RST:   io
+
+
+62:   PU.0/DP:   io
+63:   PUR:   io
+64:   PU.1/DM:   io
+65:   VBUS:   pwr
+66:   VUSB:   pwr
+67:   V18:   pwr
+
+
+21:   P1.0:   io
+22:   P1.1:   io
+23:   P1.2:   io
+24:   P1.3:   io
+25:   P1.4:   io
+26:   P1.5:   io
+27:   P1.6:   io
+28:   P1.7:   io
+
+29:   P2.0:   io
+30:   P2.1:   io
+31:   P2.2:   io
+32:   P2.3:   io
+33:   P2.4:   io
+34:   P2.5:   io
+35:   P2.6:   io
+36:   P2.7:   io
+
+72:   PJ.0/TDO:   io
+73:   PJ.1/TDI/TCLK:   io
+74:   PJ.2/TMS:   io
+75:   PJ.3/TCK:   io
+
+
+
+61:   VSSU:   pwr
+19:   DVSS1:   pwr
+49:   DVSS2:   pwr
+68:   AVSS2:   pwr
+14:   AVSS1:   pwr
+[mapping right]
+37:   P3.0:   io
+38:   P3.1:   io
+39:   P3.2:   io
+40:   P3.3:   io
+41:   P3.4:   io
+42:   P3.5:   io
+43:   P3.6:   io
+44:   P3.7:   io
+
+45:   P4.0:   io
+46:   P4.1:   io
+47:   P4.2:   io
+48:   P4.3:   io
+51:   P4.4:   io
+52:   P4.5:   io
+53:   P4.6:   io
+54:   P4.7:   io
+
+9:   P5.0:   io
+10:   P5.1:   io
+69:   XT2IN/P5.2:   io
+70:   XT2OUT/P5.3:   io
+12:   XIN/P5.4:   io
+13:   XOUT/P5.5:   io
+55:   P5.6:   io
+56:   P5.7:   io
+
+77:   P6.0:   io
+78:   P6.1:   io
+79:   P6.2:   io
+80:   P6.3:   io
+1:   P6.4:   io
+2:   P6.5:   io
+3:   P6.6:   io
+4:   P6.7:   io
+
+5:   P7.0:   io
+6:   P7.1:   io
+7:   P7.2:   io
+8:   P7.3:   io
+57:   P7.4:   io
+58:   P7.5:   io
+59:   P7.6:   io
+60:   P7.7:   io
+
+15:   P8.0:   io
+16:   P8.1:   io
+17:   P8.2:   io

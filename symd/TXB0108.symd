@@ -1,0 +1,54 @@
+[description]
+refdes=U?
+device=TXB0108
+description=8 Bit level shifter
+comment=Created with autosym
+documentation=http://www.ti.com/lit/ds/symlink/txb0108.pdf
+symversion=0.8
+author=Markus Hutzler, spiderware gmbh
+dist-license=Free
+use-license=Free
+category=Interface
+
+[option]
+# set options here.
+pin_length=300
+pin_grid=200
+symbol_width=1200
+
+[variants]
+# variants are used to create symbols for different packages. The filename will be: devicename + variant
+DQS:   Package
+PW:   Package
+RGY:   Package
+YZP:   Package
+
+[mapping left]
+# set pins, Name and type for each pin on the left side, There has to be as many pis as variants!
+# if a variant has no such pin, use the '-' sign
+# an ! in front of the name will create a negative pin
+5,2,2,C4:   VCCA:   pwr
+6,10,10,D4:   OE:   in
+
+1,1,1,A3:   A1:   io
+2,3,3,A4:   A2:   io
+3,4,4,B3:   A3:   io
+4,5,5,B4:   A4:   io
+7,6,6,C3:   A5:   io
+8,7,7,E4:   A6:   io
+9,8,8,D3:   A7:   io
+10,9,9,E3:   A8:   io
+
+15,11,11,D1:   GND:   pwr
+[mapping right]
+16,19,19,C1:   VCCB:   pwr
+
+
+20,20,20,A2:   B1:   io
+19,18,18,A1:   B2:   io
+18,17,17,B2:   B3:   io
+17,16,16,B1:   B4:   io
+14,15,15,C2:   B5:   io
+13,14,14,E1:   B6:   io
+12,13,13,D2:   B7:   io
+11,12,12,E2:   B8:   io

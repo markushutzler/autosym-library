@@ -1,0 +1,36 @@
+[description]
+refdes=U?
+device=FXWA9306
+description=2 Bit I2C level shifter
+comment=Created with autosym
+documentation=http://www.mouser.com/ds/2/149/FXWA9306-113424.pdf
+symversion=0.8
+author=Markus Hutzler, spiderware gmbh
+dist-license=Free
+use-license=Free
+category=Interface
+
+[option]
+# set options here.
+pin_length=300
+pin_grid=200
+symbol_width=1200
+
+[variants]
+# variants are used to create symbols for different packages. The filename will be: devicename + variant
+L8X:   Package
+
+[mapping left]
+# set pins, Name and type for each pin on the left side, There has to be as many pis as variants!
+# if a variant has no such pin, use the '-' sign
+# an ! in front of the name will create a negative pin
+2:   VCCA:   pwr
+
+3:   A0:   io
+4:   A1:   io
+1:   GND:   pwr
+[mapping right]
+7:   VCCB:   pwr
+8:   OE:   in
+6:   B0:   io
+5:   B1:   io

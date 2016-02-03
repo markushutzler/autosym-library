@@ -1,0 +1,32 @@
+[description]
+refdes=U?
+device=USBLC6-4
+description=USBLC6-4
+comment=Created with autosym
+documentation=http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00047494.pdf
+symversion=0.8
+author=Markus Hutzler, spiderware gmbh
+dist-license=Free
+use-license=Free
+category=Interface
+
+[option]
+# set options here.
+pin_length=300
+pin_grid=200
+symbol_width=800
+
+[variants]
+# variants are used to create symbols for different packages. The filename will be: devicename + variant
+SOT:   SOT23-6L Package
+
+[mapping left]
+# set pins, Name and type for each pin on the left side, There has to be as many pis as variants!
+# if a variant has no such pin, use the '-' sign
+5:   VCC:   pwr
+1:   IO1:   in
+3:   IO2:   in
+4:   IO3:   in
+6:   IO4:   in
+2:   GND:   in
+[mapping right]

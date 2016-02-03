@@ -1,0 +1,43 @@
+[description]
+refdes=U?
+device=74164
+description=74164
+comment=Created with autosym
+documentation=http://www.nxp.com/documents/data_sheet/74HC_HCT165.pdf
+symversion=0.8
+author=Markus Hutzler, spiderware gmbh
+dist-license=Free
+use-license=Free
+category=Logic
+
+[option]
+# set options here.
+pin_length=300
+pin_grid=200
+symbol_width=1200
+
+[variants]
+# variants are used to create symbols for different packages. The filename will be: devicename + variant
+-:   Package
+
+[mapping left]
+# set pins, Name and type for each pin on the left side, There has to be as many pis as variants!
+# if a variant has no such pin, use the '-' sign
+# an ! in front of the name will create a negative pin
+14:   VCC:   pwr
+
+8:   CP:   in
+9:   !MR:   in
+1:   DSA:   in
+2:   DSB:   in
+
+7:   GND:   pwr
+[mapping right]
+3:   Q0:   in
+4:   Q1:   in
+5:   Q2:   in
+6:   Q3:   in
+10:   Q4:   in
+11:   Q5:   in
+12:   Q6:   in
+13:   Q7:   in

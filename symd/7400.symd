@@ -1,0 +1,56 @@
+[description]
+refdes=U?
+device=7400
+description=7400
+comment=Created with autosym
+documentation=http://www.nxp.com/documents/data_sheet/74HC_HCT00.pdf
+symversion=1.0
+author=Markus Hutzler, spiderware gmbh
+dist-license=Free
+use-license=Free
+category=Logic
+
+[option]
+# set options here.
+pin_length=300
+pin_grid=200
+
+[variants]
+# variants are used to create symbols for different packages. The filename will be: devicename + variant
+-   :  Package
+
+[mapping left]
+# set pins, Name and type for each pin on the left side, There has to be as many pis as variants!
+# if a variant has no such pin, use the '-' sign
+# an ! in front of the name will create a negative pin
+14  :  VCC  :  pwr
+
+1   :  1A   :   in
+2   :  1B   :   in
+
+3   :  2A   :   in
+4   :  2B   :   in
+
+9   :  3A   :   in
+10  :  3B   :   in
+
+12  :  4A   :   in
+13  :  4B   :   in
+
+7   :  GND  :   pwr
+[end]
+
+[mapping right]
+
+
+3   :  1Y   :   out
+
+
+6   :  2Y   :   out
+
+
+8   :  3Y   :   out
+
+
+11  : 4Y    :   out
+[end]

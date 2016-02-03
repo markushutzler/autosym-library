@@ -1,0 +1,62 @@
+[description]
+refdes=U?
+device=MCP23x17
+description=MCP23x17
+comment=Created with autosym
+documentation=http://ww1.microchip.com/downloads/en/DeviceDoc/21952b.pdf
+symversion=0.8
+author=Markus Hutzler, spiderware gmbh
+dist-license=Free
+use-license=Free
+category=Interface
+
+[option]
+# set options here.
+pin_length=300
+pin_grid=200
+symbol_width=1200
+
+[variants]
+# variants are used to create symbols for different packages. The filename will be: devicename + variant
+QFN:   Package
+SOIC:   Package
+
+[mapping left]
+# set pins, Name and type for each pin on the left side, There has to be as many pis as variants!
+# if a variant has no such pin, use the '-' sign
+# an ! in front of the name will create a negative pin
+5,9:   VCC:   pwr
+
+14,18:   !RESET:   in
+
+7,11:   !CS:   in
+8,12:   SCK/SCL:   in
+9,13:   MOSI/SDA:   in
+10,14:   MISO/NC:   out
+
+11,15:   A0:   in
+12,16:   A1:   in
+13,17:   A2:   in
+
+16,20:   INTA:   in
+15,19:   INTB:   in
+
+6,10:   GND:   pwr
+[mapping right]
+17,21:   GPA0:   io
+18,22:   GPA1:   io
+19,23:   GPA2:   io
+20,24:   GPA3:   io
+21,25:   GPA4:   io
+22,26:   GPA5:   io
+23,27:   GPA6:   io
+24,28:   GPA7:   io
+
+25,1:   GPB0:   io
+26,2:   GPB1:   io
+27,3:   GPB2:   io
+28,4:   GPB3:   io
+1,5:   GPB4:   io
+2,6:   GPB5:   io
+3,7:   GPB6:   io
+4,8:   GPB7:   io

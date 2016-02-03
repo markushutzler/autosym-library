@@ -1,0 +1,37 @@
+[description]
+refdes=U?
+device=ORG1510
+description= ORG1510
+comment=Created with autosym
+documentation=http://www.origingps.com/wp-content/uploads/2015/06/Multi-Micro-Hornet-ORG1510-Datasheet.pdf
+symversion=0.8
+author=Markus Hutzler, spiderware gmbh
+dist-license=Free
+use-license=Free
+category=Radio
+
+[option]
+# set options here.
+pin_length=300
+pin_grid=200
+symbol_width=1500
+
+[variants]
+# variants are used to create symbols for different packages. The filename will be: devicename + variant
+-:   Package
+
+[mapping left]
+4:   VCC:   pwr
+
+3:   TX:   io:   
+10:   RX:   io
+
+5:   GND:   pwr
+[mapping right]
+8:   RST:   io
+1:   ON_OFF:   io
+6:   WKUP:   io
+2:   1PPS:   io
+7:   !CTS:   io
+9:   RTS:   io
+

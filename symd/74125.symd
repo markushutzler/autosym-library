@@ -1,0 +1,48 @@
+[description]
+refdes=U?
+device=74125
+description=74125
+comment=Created with autosym
+documentation=http://www.fairchildsemi.com/ds/74/74VHC125.pdf
+symversion=0.8
+author=Markus Hutzler, spiderware gmbh
+dist-license=Free
+use-license=Free
+category=Logic
+
+[option]
+# set options here.
+pin_length=300
+pin_grid=200
+symbol_width=1200
+
+[variants]
+# variants are used to create symbols for different packages. The filename will be: devicename + variant
+-:   Package
+
+[mapping left]
+# set pins, Name and type for each pin on the left side, There has to be as many pis as variants!
+# if a variant has no such pin, use the '-' sign
+# an ! in front of the name will create a negative pin
+14:   VCC:   pwr
+
+1:   !OE1:   in
+2:   A1:   in
+4:   !OE2:   in
+5:   A2:   in
+10:   !OE3:   in
+9:   A3:   in
+13:   !OE4:   in
+12:   A4:   in
+
+7:   GND:   pwr
+[mapping right]
+
+
+3:   Y1:   out
+
+6:   Y2:   out
+
+8:   Y3:   out
+
+11:   Y4:   out

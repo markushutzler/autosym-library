@@ -1,0 +1,64 @@
+[description]
+refdes=U?
+device=MSP430G2x33
+description=MSP430F2x33 or MSP430F2x03 devices
+comment=Created with autosym
+documentation=http://
+symversion=0.8
+author=Markus Hutzler, spiderware gmbh
+dist-license=Free
+use-license=Free
+category=MCU
+
+[option]
+# set options here.
+pin_length=300
+pin_grid=200
+symbol_width=1800
+
+[variants]
+# variants are used to create symbols for different packages. The filename will be: devicename + variant
+N20:   PDIP20 Package
+PW20:   TSSOP20 Package
+PW28:   TSSOP28 Package
+RHB32:   QFN32 Package
+
+[mapping left]
+# set pins, Name and type for each pin on the left side, There has to be as many pis as variants!
+# if a variant has no such pin, use the '-' sign
+# an ! in front of the name will create a negative pin
+ 1, 1, 1,30:   DVCC:   pwr
+ -, -, -,29:   AVCC:   pwr
+16,16,24,23:   !RST:   i
+17,17,25,24:   TEST:   i
+
+ 2, 2, 2,31:   P1.0:   io
+ 3, 3, 3, 1:   P1.1:   io
+ 4, 4, 4, 2:   P1.2:   io
+ 5, 5, 5, 3:   P1.3:   io
+ 6, 6, 6, 4:   P1.4:   io
+ 7, 7, 7, 5:   P1.5:   io
+14,14,22,21:   P1.6:   io
+15,15,23,22:   P1.7:   io
+
+ -, -, -,28:   DVSS:   i
+ -, -, -,33:   DVSS:   i
+20,20,28,27:   DVSS:   i
+[mapping right]
+ 8, 8,10, 9:   P2.0:   io
+ 9, 9,11,10:   P2.1:   io
+10,10,12,11:   P2.2:   io
+11,11,16,15:   P2.3:   io
+12,12,17,16:   P2.4:   io
+13,13,18,17:   P2.5:   io
+19,19,27,26:   P2.6:   io
+18,18,26,25:   P2.7:   io
+
+ -, -, 9, 7:   P3.0:   io
+ -, -, 8, 6:   P3.1:   io
+ -, -,13,12:   P3.2:   io
+ -, -,14,13:   P3.3:   io
+ -, -,15,14:   P3.4:   io
+ -, -,19,18:   P3.5:   io
+ -, -,20,19:   P3.6:   io
+ -, -,21,20:   P3.7:   io

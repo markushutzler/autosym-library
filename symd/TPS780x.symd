@@ -1,0 +1,34 @@
+[description]
+refdes=U?
+device=TPS780x
+description= TPS780x
+comment=Created with autosym
+documentation=http://www.ti.com/lit/ds/symlink/tps61222.pdf
+symversion=0.8
+author=Markus Hutzler, spiderware gmbh
+dist-license=Free
+use-license=Free
+category=Power
+
+[option]
+# set options here.
+pin_length=300
+pin_grid=200
+symbol_width=1200
+
+[variants]
+# variants are used to create symbols for different packages. The filename will be: devicename + variant
+DRV:   DRV Package
+DDC:   DDC Package
+
+[mapping left]
+# set pins, Name and type for each pin on the left side, There has to be as many pis as variants!
+# if a variant has no such pin, use the '-' sign
+# an ! in front of the name will create a negative pin
+6,1:   VIN:   pwr
+4,3:   EN:   in
+3,4:   FB:   in
+[mapping right]
+1,5:   VOUT:   out
+0,-:   GND:   pwr
+5,2:   GND:   pwr

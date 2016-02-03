@@ -1,0 +1,34 @@
+[description]
+refdes=U?
+device=LTC4054-4.2
+description= LTC4054-4.2
+comment=Created with autosym
+documentation=http://cds.linear.com/docs/en/datasheet/405442xf.pdf
+symversion=0.8
+author=Markus Hutzler, spiderware gmbh
+dist-license=Free
+use-license=Free
+category=Power
+
+[option]
+# set options here.
+pin_length=300
+pin_grid=200
+symbol_width=1200
+
+[variants]
+# variants are used to create symbols for different packages. The filename will be: devicename + variant
+-:   TSOT-23 Package
+
+
+[mapping left]
+# set pins, Name and type for each pin on the left side, There has to be as many pis as variants!
+# if a variant has no such pin, use the '-' sign
+# an ! in front of the name will create a negative pin
+4:   VCC:   pwr
+
+2:   GND:   pwr
+[mapping right]
+3:   BAT:   pwr
+1:   !CHRG:   io
+5:   PROG:   an

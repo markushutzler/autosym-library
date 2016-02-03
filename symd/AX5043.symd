@@ -1,0 +1,61 @@
+[description]
+refdes=U?
+device=AX5043
+description= AX5043
+comment=Created with autosym
+documentation=http://www.axsem.com/www/rfics/narrow-band/ax5043
+symversion=0.8
+author=Markus Hutzler, spiderware gmbh
+dist-license=Free
+use-license=Free
+category=Radio
+
+[option]
+# set options here.
+pin_length=300
+pin_grid=200
+symbol_width=1500
+
+[variants]
+# variants are used to create symbols for different packages. The filename will be: devicename + variant
+-:   Package
+
+[mapping left]
+# set pins, Name and type for each pin on the left side, There has to be as many pis as variants!
+# if a variant has no such pin, use the '-' sign
+# an ! in front of the name will create a negative pin
+23:   VDD_IO:   pwr
+
+11:   DATA:   io
+12:   DCLK:   io
+13:   SYSCLK:   io
+14:   SEL:   io
+15:   CLK:   io
+16:   MISO:   io
+17:   MOSI:   io
+19:   IRQ:   io
+20:   PWRAMP:   io
+21:   ANTSEL:   io
+
+8:   FILT:   an
+
+25:   GPADC1:   an
+26:   GPADC2:   an
+[mapping right]
+1:   VDD_ANA:   pwr
+7:   VDD_ANA:   pwr
+
+3:   ANTP:   rf
+4:   ANTN:   rf
+5:   ANTP1:   rf
+ 
+
+
+9:   L2:   an
+10:   L1:   an
+
+27:   CLK16N:   io
+28:   CLK16P:   io
+
+2:   GND:   pwr
+6:   GND:   pwr

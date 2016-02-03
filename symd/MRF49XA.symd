@@ -1,0 +1,51 @@
+[description]
+refdes=U?
+device=MRF49XA
+description=MRF49XA
+comment=Created with autosym
+documentation=http://ww1.microchip.com/downloads/en/devicedoc/70590c.pdf
+symversion=0.8
+author=Markus Hutzler, spiderware gmbh
+dist-license=Free
+use-license=Free
+category=Radio
+
+[option]
+# set options here.
+pin_length=300
+pin_grid=200
+symbol_width=1500
+
+[variants]
+# variants are used to create symbols for different packages. The filename will be: devicename + variant
+-:   Package
+
+[mapping left]
+# set pins, Name and type for each pin on the left side, There has to be as many pis as variants!
+# if a variant has no such pin, use the '-' sign
+# an ! in front of the name will create a negative pin
+16:   !INT:   io
+10:   !RST:   io
+
+4:   MISO:   out
+1:   MOSI:   in
+2:   SCK:   in
+3:   !CS:   in
+
+5:   !IRQ:   out
+6:   !FSEL:   io
+7:   FCAP:   io
+8:   CLKOUT:   out
+[mapping right]
+14:   VDD:   pwr
+
+15:   RSSIO:   io
+
+13:   RFN:   rf
+12:   RFP:   rf
+
+
+
+9:   RFXTL:   io
+
+11:   GND:   pwr

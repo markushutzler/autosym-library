@@ -1,0 +1,62 @@
+[description]
+refdes=U?
+device=MSP430F21x2
+description=MSP430F21x2
+comment=Created with autosym
+documentation=http://
+symversion=0.8
+author=Markus Hutzler, spiderware gmbh
+dist-license=Free
+use-license=Free
+category=MCU
+
+[option]
+# set options here.
+pin_length=300
+pin_grid=200
+symbol_width=1800
+
+[variants]
+# variants are used to create symbols for different packages. The filename will be: devicename + variant
+PW:   PW Package
+RHB:   RHB Package
+
+[mapping left]
+# set pins, Name and type for each pin on the left side, There has to be as many pis as variants!
+# if a variant has no such pin, use the '-' sign
+# an ! in front of the name will create a negative pin
+ 2,30:   VCC:   pwr
+ 7, 5:   RST:   in
+ 1,29:   TEST:   in
+
+21,21:   P1.0:   io
+22,22:   P1.1:   io
+23,23:   P1.2:   io
+24,24:   P1.3:   io
+25,25:   P1.4:   io
+26,26:   P1.5:   io
+27,27:   P1.6:   io
+28,28:   P1.7:   io
+
+
+
+
+ 4, 1:   GND:   pwr
+[mapping right]
+ 8, 6:   P2.0:   io
+ 9, 7:   P2.1:   io
+10, 8:   P2.2:   io
+19,18:   P2.3:   io
+20,19:   P2.4:   io
+ 3,32:   P2.5:   io
+ 6, 3:   P2.6:   io
+ 5, 2:   P2.7:   io
+
+11, 9:   P3.0:   io
+12,10:   P3.1:   io
+13,11:   P3.2:   io
+14,12:   P3.3:   io
+15,13:   P3.4:   io
+16,14:   P3.5:   io
+17,15:   P3.6:   io
+18,16:   P3.7:   io

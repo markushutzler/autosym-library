@@ -1,0 +1,49 @@
+[description]
+refdes=U?
+device=MCP23x08
+description=MCP23x08
+comment=Created with autosym
+documentation=http://ww1.microchip.com/downloads/en/DeviceDoc/21952b.pdf
+symversion=0.8
+author=Markus Hutzler, spiderware gmbh
+dist-license=Free
+use-license=Free
+category=Interface
+
+[option]
+# set options here.
+pin_length=300
+pin_grid=200
+symbol_width=1200
+
+[variants]
+# variants are used to create symbols for different packages. The filename will be: devicename + variant
+QFN:   Package
+SOIC:   Package
+SSOP:   Package
+
+[mapping left]
+# set pins, Name and type for each pin on the left side, There has to be as many pis as variants!
+# if a variant has no such pin, use the '-' sign
+# an ! in front of the name will create a negative pin
+18,18,20:   VCC:   pwr
+
+4,6,6:   !RESET:   in
+7,8,8:   INT:   in
+19,1,1:   SCL:   in
+20,2,2:   SDA:   in
+
+3,5,5:   A0:   in
+2,4,4:   A1:   in
+1,3,3:   A2:   in
+
+17,9,9:   GND:   pwr
+[mapping right]
+9,10,12:   GP0:   io
+10,11,13:   GP1:   io
+11,12,14:   GP2:   io
+12,13,15:   GP3:   io
+13,14,16:   GP4:   io
+14,15,17:   GP5:   io
+15,16,18:   GP6:   io
+16,17,19:   GP7:   io

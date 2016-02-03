@@ -1,0 +1,39 @@
+[description]
+refdes=U?
+device=CN3065
+description= CN3065
+comment=Created with autosym
+documentation=CN3065
+symversion=0.8
+author=Markus Hutzler, spiderware gmbh
+dist-license=Free
+use-license=Free
+category=Power
+
+[option]
+# set options here.
+pin_length=300
+pin_grid=200
+symbol_width=1500
+
+[variants]
+# variants are used to create symbols for different packages. The filename will be: devicename + variant
+-:   Package
+
+[mapping left]
+# set pins, Name and type for each pin on the left side, There has to be as many pis as variants!
+# if a variant has no such pin, use the '-' sign
+# an ! in front of the name will create a negative pin
+4:   VIN:   pwr
+
+7:   CHG:   io
+6:   DONE:   io
+
+2:   ISET:   an
+[mapping right]
+5:   BAT:   pwr
+
+8:   FB:   an
+1:   TEMP:   an
+
+3:   GND:   pwr

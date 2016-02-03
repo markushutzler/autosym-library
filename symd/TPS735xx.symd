@@ -1,0 +1,34 @@
+[description]
+refdes=U?
+device=TPS735xx
+description= TPS735xx
+comment=Created with autosym
+documentation=http://www.ti.com/lit/ds/symlink/tps73533.pdf
+symversion=0.8
+author=Markus Hutzler, spiderware gmbh
+dist-license=Free
+use-license=Free
+category=Power
+
+[option]
+# set options here.
+pin_length=300
+pin_grid=200
+symbol_width=1200
+
+[variants]
+# variants are used to create symbols for different packages. The filename will be: devicename + variant
+DRV:   DRV Package (WSON8)
+DRB:   DDC Package (WSON6)
+
+[mapping left]
+# set pins, Name and type for each pin on the left side, There has to be as many pis as variants!
+# if a variant has no such pin, use the '-' sign
+# an ! in front of the name will create a negative pin
+6,8:   VIN:   pwr
+4,5:   EN:   in
+2,3:   FB:   in
+[mapping right]
+1,1:   VOUT:   out
+3,4:   GND:   pwr
+0,-:   GND:   pwr
