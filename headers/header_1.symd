@@ -1,0 +1,21 @@
+[description]
+refdes=X?
+device=HEADER_
+description=Simple two row header
+comment=Created with autosym
+documentation=http://
+symversion=0.8
+author=Markus Hutzler <markus.hutzler@me.com>
+dist-license=Free
+use-license=Free
+category=Connector
+
+[option]
+# set header options here.
+type=header
+pin_length=150
+pin_grid=200
+pin_geometry=box    #box, circle, hole
+rows=1
+lines_start=1
+lines_end=30
