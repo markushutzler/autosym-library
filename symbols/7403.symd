@@ -1,11 +1,11 @@
 [description]
 refdes=U?
-device=7400
-description=7400
+device=7403
+description=7403
 comment=Created with autosym
-documentation=http://www.nxp.com/documents/data_sheet/74HC_HCT00.pdf
+documentation=http://assets.nexperia.com/documents/data-sheet/74HC_HCT03.pdf
 symversion=1.0
-author=Markus Hutzler, spiderware gmbh
+author=Markus Hutzler
 dist-license=Free
 use-license=Free
 category=Logic
