@@ -1,0 +1,41 @@
+[description]
+refdes=U?
+device=ADS1018
+description=ADS1018
+comment=Created with autosym
+documentation=http://www.ti.com/general/docs/lit/getliterature.tsp?genericPartNumber=ads1018&fileType=pdf
+symversion=1.0
+author=Markus Hutzler
+dist-license=Free
+use-license=Free
+category=ADC
+
+[option]
+# set options here.
+pin_length=300
+pin_grid=200
+
+[variants]
+# variants are used to create symbols for different packages. The filename will be: devicename + variant
+-   :  Package
+
+[mapping left]
+# set pins, Name and type for each pin on the left side, There has to be as many pis as variants!
+# if a variant has no such pin, use the '-' sign
+# an ! in front of the name will create a negative pin
+8   :  VCC  :  pwr
+
+1   :  SCK  :   in
+2   :  !CS  :   in
+10  :  MOSI :   in
+9   :  MISO :   out
+[end]
+
+[mapping right]
+4   :  AIN0 :   an
+5   :  AIN1 :   an
+6   :  AIN2 :   an
+7   :  AIN3 :   an
+
+3   :  GND  :   pwr
+[end]
