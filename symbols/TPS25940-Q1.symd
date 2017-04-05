@@ -1,0 +1,47 @@
+[description]
+refdes=U?
+device=TPS25940-Q1
+description=TPS25940-Q1 eFuse with Integrated Short-to-Battery Protection
+comment=Created with autosym
+documentation=http://www.ti.com/lit/ds/symlink/tps25940-q1.pdf
+symversion=0.8
+author=Markus Hutzler
+dist-license=Free
+use-license=Free
+category=Power
+
+[option]
+pin_length=300
+pin_grid=200
+symbol_width=1200
+
+[variants]
+-:   WQFN Package
+
+[mapping left]
+9:   IN:   pwr
+10:  IN:   pwr
+11:  IN:   pwr
+12:  IN:   pwr
+13:  IN:   pwr
+
+14:  EN/UVP:   in
+15:  OVP
+1:   DEVSLP
+18:  dVdT
+16:  GND:   pwr
+[end]
+
+[mapping right]
+4:   OUT:   pwr
+5:   OUT:   pwr
+6:   OUT:   pwr
+7:   OUT:   pwr
+8:   OUT:   pwr
+
+20:  !FLT:   out
+3:   PGTH:   in
+2:   PGOOD
+19:  IMON
+17:  ILIM
+[end]

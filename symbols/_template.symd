@@ -1,0 +1,44 @@
+[description]
+refdes=U?
+device=TEMPLATE
+description=Example Component
+comment=Created with autosym
+documentation=http://example.com/pdf
+symversion=1.0
+author=Markus Hutzler
+dist-license=Free
+use-license=Free
+category=Logic
+
+[option]
+# Set options here.
+pin_length=300
+pin_grid=200
+
+[variants]
+# Variants are used to create symbols for different packages.
+# The filename is construcded with devicename + variant.
+-   :  Package
+
+[mapping left]
+# Set pins, name and type for each pin on the left side.
+# There has to be as many pis as variants!
+# If a variant has no pin, use the '-' sign.
+# An '!' as name prefix will create a negative pin
+14:  VCC:  pwr
+
+1:   1A:   in
+2:   !1B:  in
+
+7:   GND:  pwr
+[end]
+
+[mapping right]
+# Set pins, name and type for each pin on the right side.
+
+3:   1Y:   out
+6:   2Y:   out
+8:   3Y:   out
+11:  4Y:   out
+
+[end]
