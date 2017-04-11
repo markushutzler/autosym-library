@@ -1,0 +1,56 @@
+[description]
+refdes=U?
+device=74157
+description=QUADRUPLE 2-LINE TO 1-LINE DATA SELECTORS/MULTIPLEXERS
+comment=Created with autosym
+documentation=http://www.ti.com/lit/ds/schs335/schs335.pdf
+symversion=0.8
+author=Markus Hutzler
+dist-license=Free
+use-license=Free
+category=Logic
+
+[option]
+# set options here.
+pin_length=300
+pin_grid=200
+symbol_width=1200
+
+[variants]
+-:   Package
+
+[mapping left]
+16:  VCC:  pwr
+
+15:  !G:   in
+1:   A/B:  in
+
+2:   1A:   in
+3:   1B:   in
+
+5:   2A:   in
+6:   2B:   in
+
+11:  3A:   in
+10:  3B:   in
+
+14:  4A:   in
+13:  4B:   in
+
+8:   GND:   pwr
+[mapping right]
+
+
+
+
+
+4:   1Y:   out
+
+
+7:   2Y:   out
+
+
+9:   3Y:   out
+
+
+12:  4Y:   out
